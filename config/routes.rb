@@ -30,7 +30,9 @@ Rails.application.routes.draw do
   #to see all blogs
 
   get "blogsWithParticularTag/:tag", to: "blog#showBlogsWithParticularTag"
-  #to see particular tag blogs
+  #to see particular tag blogs info
+
+
 
   
 end
