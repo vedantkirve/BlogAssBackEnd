@@ -10,6 +10,8 @@ Rails.application.routes.draw do
   post "userId",to: "profile#sendUserId"
   #to get userId
 
+  get "userInfo/:userId", to: "profile#getUserInfo"
+
   post "createBlog", to: "blog#createBlog"
   # to create blog
 
@@ -29,7 +31,7 @@ Rails.application.routes.draw do
   get "allBlogs", to: "blog#showAllBlogs"
   #to see all blogs
 
-  get "blogsWithParticularTag/:tag", to: "blog#showBlogsWithParticularTag"
+  get "blogsWithParticularTag/:tags", to: "blog#showBlogsWithParticularTag"
   #to see particular tag blogs info
 
 

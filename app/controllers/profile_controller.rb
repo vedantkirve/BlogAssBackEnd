@@ -19,6 +19,16 @@ class ProfileController < ApplicationController
         else
             render :json => "NoUser"
         end
+        # render :json => userIdInfo
+    end
+
+    def getUserInfo
+
+        userIdInfo = Profile.find(params[:userId])
+        
+        render :json => userIdInfo
+       
+        # render :json => userIdInfo
     end
 
 end

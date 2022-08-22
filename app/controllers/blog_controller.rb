@@ -3,7 +3,7 @@ class BlogController < ApplicationController
     def createBlog
         userId = params[:userId]
         title = params[:title]
-        description = params[:title]
+        description = params[:description]
         authorName = params[:authorName]
         dateTime = params[:dateTime]
         tags = params[:tags]

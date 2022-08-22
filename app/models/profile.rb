@@ -1,3 +1,3 @@
 class Profile < ApplicationRecord
-    has_many :blogs
+    # has_many :blog
 end
